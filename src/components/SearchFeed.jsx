@@ -10,7 +10,6 @@ import Loader from './Loader'
 
 const SearchFeed = () => {
   
-  // const [selectedCategory, setSelectedCategory] = useState('New')
   const  [videos, setVideos] = useState([])
   const {searchTerm} = useParams()
 
@@ -25,9 +24,7 @@ const SearchFeed = () => {
     <section className='min-w-full h-full bg-black ' >
 
      <Navbar/>  
-     {/* <Sidebar selectedCategory={selectedCategory} 
-     setSelectedCategory={setSelectedCategory} /> */}
-
+    
       <div className='md:ml-64 pt-14 pl-4 md:pl-1' >
         <h1 className='text-white text-lg md:text-2xl' > Search Results for <span className='text-red-500' >{searchTerm}</span> </h1>
 

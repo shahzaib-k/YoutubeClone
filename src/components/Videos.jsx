@@ -14,7 +14,6 @@ const Videos = ({ videos, direction , height }) => {
                 {videos.map((item, index) => (
                     <div key={index}>
                         {item.id.videoId && <VideoCard video={item} height={height} />}
-                        {/* {item.snippet.channelId && <ChannelCard channelDetail={item} />} */}
                     </div>
                 ))}
             </section>
